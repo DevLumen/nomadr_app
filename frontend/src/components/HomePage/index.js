@@ -17,15 +17,15 @@ function Home() {
             <div className='site-name'>Nomadr.</div>
             <div className='VanLife__container'>
                 <img className='VanLife__image' alt="Van-Life" src={'https://cdn.shopify.com/s/files/1/0458/2591/7081/products/campervan3-mockup_1024x.png?v=1630079365'}></img>
-                <Link to={`/vans`}>
+                
                 <div className='explore-handler'>
-                    <button className='explore-btn'>Explore Nearby</button>
+                    <button className='explore-btn'><Link to={`/vans`}><p className='explore_text'>Explore Nearby</p></Link></button>
                 </div>
-                </Link>
+                
             </div>
             <div className='build__container'>
                 <h2 className='build-title'>Full Van Build<i class="fas fa-share"></i></h2>
-                <iframe className='build__video' width="1422" height="800" src="https://www.youtube.com/embed/hbbbNA9cvzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className='build__video' width="1422" height="800" src="https://www.youtube.com/embed/ZHmv5Nzle14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     );

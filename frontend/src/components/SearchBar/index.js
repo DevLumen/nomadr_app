@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { getAllVans } from '../../store/vans';
-import "./SearchBar.css"
+import "./SearchBar.css";
 
 
 function SearchBar({ allTitles, allVans }) {

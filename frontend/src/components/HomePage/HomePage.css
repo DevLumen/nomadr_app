@@ -10,8 +10,10 @@
 .the-image {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 1%;
-    margin-top: 3.5%;
+    margin-top: 1.5%;
     border-radius: 30px;
+    max-width: 90vw;
+    max-height: 90vh;
 }
 
 .banner__info {
@@ -21,11 +23,7 @@
     font-weight: bold;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30pt;
-    position: absolute;
-    min-width: 1500px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -40%);
 }
 
 .banner, .build__container {
@@ -95,7 +93,7 @@
     transition: .5s ease;
 }
 
-.explore-btn {
+.explore-btn a {
     background: none;
     border: none;
     color: rgba(245, 245, 245, 0.671);
@@ -110,10 +108,17 @@
     text-align: center;
 }
 
-.explore-btn:hover {
+.explore-btn a:hover {
     cursor: pointer;
     color: white;
 }
+
+a { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
 
 @media screen and (min-width: 1640px) and (max-width: 2000px) {
     .VanLife__container {
@@ -169,22 +174,27 @@
 
 @media screen and (min-width: 100px) and (max-width: 1650px) {
     .VanLife__container {
-        transform: scale(0.85);
-        margin-left: 0;
+        border: 2px red solid;
+        display: flex;
         justify-content: center;
-        position: relative;
-        width: 68%;
-        min-width: 1025px;
+        max-height: 75vh;
+        max-width: 60vw;
+        margin: 0;
+    }
+
+    .VanLife__image {
+        max-width: 60vw;
     }
 
     .explore-handler {
+        text-decoration: none;
         position: absolute;
         border-radius: 30px;
         bottom: 0;
         background-color: #ff444a;
         overflow: hidden;
         width: 100%;
-        min-width: 1025px;
+        min-width: 60vw;
         height: 0;
         transition: .5s ease;
     }
@@ -197,14 +207,12 @@
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 20pt;
         position: absolute;
-        top: 63%;
-        /* left: 50%; */
+        top: 57vh;
         transform: translate(-50%, -50%);
     }
 
     .the-image {
         transform: scale(0.85);
-        min-width: 1025px;
     }
 
     .site-name {
@@ -213,14 +221,12 @@
         font-family: 'Finger Paint', cursive;
         font-size: 42pt;
         font-weight: bolder;
-        position: absolute;
-        top: 98%;
-        bottom: 0;
-        right: 10.9%;
+        /* position: absolute; */
+        top: 86vh;
     }
 
     .build__video {
-        transform: scale(0.8);
+        transform: scale(0.65);
         border-radius: 30px;
     }
 
