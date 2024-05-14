@@ -108,6 +108,11 @@
     text-align: center;
 }
 
+.explore-btn {
+    background: none;
+    border: none;
+}
+
 .explore-btn a:hover {
     cursor: pointer;
     color: white;
@@ -171,19 +176,18 @@ a:hover, a:active { text-decoration: none; }
     }
 }
 
-
-@media screen and (min-width: 100px) and (max-width: 1650px) {
+/* Laptop */
+@media screen and (min-width: 1000px) and (max-width: 1650px) {
     .VanLife__container {
-        border: 2px red solid;
         display: flex;
         justify-content: center;
         max-height: 75vh;
-        max-width: 60vw;
+        max-width: 56vw;
         margin: 0;
     }
 
     .VanLife__image {
-        max-width: 60vw;
+        max-width: 56vw;
     }
 
     .explore-handler {
@@ -194,7 +198,7 @@ a:hover, a:active { text-decoration: none; }
         background-color: #ff444a;
         overflow: hidden;
         width: 100%;
-        min-width: 60vw;
+        min-width: 56vw;
         height: 0;
         transition: .5s ease;
     }
@@ -221,17 +225,24 @@ a:hover, a:active { text-decoration: none; }
         font-family: 'Finger Paint', cursive;
         font-size: 42pt;
         font-weight: bolder;
-        /* position: absolute; */
         top: 86vh;
     }
 
+    .build__container {
+        padding: 0;
+        margin: 0;
+    }
+
     .build__video {
+        margin-top: -10%;
         transform: scale(0.65);
         border-radius: 30px;
     }
 
     .build-title {
         font-family: 'Finger Paint', cursive;
-        margin-left: 5%;
+        margin-top: 15vh;
+        max-width: 50vw;
+        margin-left: 16vw;
     }
 }

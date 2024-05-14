@@ -103,8 +103,8 @@ html {
 }
 
 
-
-@media screen and (min-width: 100px) and (max-width: 1650px) {
+/* Laptop */
+@media screen and (min-width: 1000px) and (max-width: 1650px) {
     .container__picTitle {
         display: flex;
         flex-direction: column;
@@ -136,9 +136,8 @@ html {
     }
 
     .right__container {
+        width: 40vw;
         position: fixed;
-        left: 61%;
-        top: 6.2%;
         height: 100vh;
         margin: 0;
         padding: 0;
