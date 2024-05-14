@@ -1,1 +1,6 @@
 /* TODO Add site wide styles */
+
+body {
+    /* keeps page from showing white sapce when scrolling to bottom */
+    overscroll-behavior: none; 
+}
