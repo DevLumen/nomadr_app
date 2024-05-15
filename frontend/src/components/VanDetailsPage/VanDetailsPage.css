@@ -34,36 +34,37 @@
 /* for Firefox */
 @-moz-keyframes my-animation {
     from {
-        -moz-transform: translateX(-100%);
+        -moz-transform: translateX(-100vw);
     }
 
     to {
-        -moz-transform: translateX(550%);
+        -moz-transform: translateX(100vw);
     }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
     from {
-        -webkit-transform: translateX(-100%);
+        -webkit-transform: translateX(-100vw);
     }
 
     to {
-        -webkit-transform: translateX(550%);
+        -webkit-transform: translateX(100vw);
     }
 }
 
+/* general */
 @keyframes my-animation {
     from {
-        -moz-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+        -moz-transform: translateX(-100vw);
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw);
     }
 
     to {
-        -moz-transform: translateX(550%);
-        -webkit-transform: translateX(550%);
-        transform: translateX(550%);
+        -moz-transform: translateX(100vw);
+        -webkit-transform: translateX(100vw);
+        transform: translateX(100vw);
     }
 }
 
@@ -202,14 +203,15 @@ li {
 }
 
 .lowermost__container {
-    /* border: 2px solid black; */
+    filter: blur(7px);
+    pointer-events: none;
     padding-left: 250px;
     padding-right: 250px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* margin-bottom: 5%; */
+    margin-bottom: 0.4%;
 }
 
 .reviews__container {
@@ -281,10 +283,10 @@ li {
     background-color: #FF5A5F;
 }
 
-
+/* Laptop */
 @media screen and (min-width: 100px) and (max-width: 1650px) {
     .amenities__list {
-        /* margin-top: 10%; */
+        margin-bottom: 5%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -317,5 +319,9 @@ li {
         margin-top: 8%;
         margin-bottom: 2%;
         /* border: 2px solid purple; */
+    }
+
+    .the__gif {
+        height: 30vh;
     }
 }

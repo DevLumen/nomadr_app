@@ -96,6 +96,7 @@ function VanDetailsPage() {
                     </div>
                 </div>
             </div>
+
             <div className="lowermost__container">
                 <div className="reviews__container">
                     <h1 className="reviews__header" style={{textDecoration: "underline"}}>Reviews</h1>
@@ -116,7 +117,9 @@ function VanDetailsPage() {
                     </div>
                 </div>
             </div>
-            <img className="the__gif" src={theVan}></img>
+            <div className="gif_container">
+                <img className="the__gif" src={theVan}></img>
+            </div>
         </div>
     )
 }
