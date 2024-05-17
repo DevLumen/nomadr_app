@@ -117,7 +117,7 @@ textarea {
 
     .errors__container {
         background-color: white;
-        z-index: 1;
+        z-index: 0;
         margin-left: 65%;
         height: 65vh;
         top: -1%;
@@ -125,7 +125,7 @@ textarea {
 
     .hostForm__errors {
         background-color: white;
-        z-index: 1;
+        z-index: 0;
         width: 25vw;
         height: 60vh;
     }

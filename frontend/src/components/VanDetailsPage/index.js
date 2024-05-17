@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory, useParams } from 'react-router-dom';
 import { getOneVan } from "../../store/vans";
@@ -22,7 +22,6 @@ function VanDetailsPage() {
 
     // console.log("FLAGGGG", oneVan);
     const sessionUser = useSelector(state => state.session.user);
-    const userId = sessionUser.id
     const dispatch = useDispatch();
     const history = useHistory();
     // console.log(oneVan);
@@ -68,7 +67,7 @@ function VanDetailsPage() {
                 <h2 className="van-title">{oneVan?.title}</h2>
                 <p className="hosted-by">Hosted by: {oneVan?.User?.username}</p>
                 <div className="top__container">
-                    <img className="van__image" key={oneVan?.id} src={oneVan?.Images[0]?.url}></img>
+                    <img className="van__image" key={oneVan?.id} src={oneVan?.Images[0]?.url} alt="Oops. This is broken."></img>
                 </div>
                 {sessionUser?.id === oneVan?.userId &&
                     <div className="buttons__container">
@@ -118,7 +117,7 @@ function VanDetailsPage() {
                 </div>
             </div>
             <div className="gif_container">
-                <img className="the__gif" src={theVan}></img>
+                <img className="the__gif" src={theVan} alt="Oops. This is broken."></img>
             </div>
         </div>
     )

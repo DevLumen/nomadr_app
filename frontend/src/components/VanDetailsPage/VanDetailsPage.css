@@ -146,7 +146,7 @@
     /* margin-right: 5%; */
     min-width: 650px;
     margin-bottom: 8%;
-    text-align: center;
+    text-align: left;
 }
 
 .ICONS {
@@ -286,7 +286,7 @@ li {
 /* Laptop */
 @media screen and (min-width: 100px) and (max-width: 1650px) {
     .amenities__list {
-        margin-bottom: 5%;
+        margin-bottom: 2.5%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -318,10 +318,31 @@ li {
         transform: scale(1.1);
         margin-top: 8%;
         margin-bottom: 2%;
-        /* border: 2px solid purple; */
     }
 
     .the__gif {
         height: 30vh;
+    }
+
+    .van__image {
+        height: 55vh;
+        width: 50vw;
+    }
+
+    .van-title {
+        margin-top: 5.5%;
+    }
+
+    .hosted-by {
+        margin-top: 0;
+    }
+
+    .price-text {
+        margin-top: 0;
+    }
+
+    .van-description {
+        margin-top: 0;
+        margin-bottom: 5%;
     }
 }
