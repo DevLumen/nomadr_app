@@ -53,7 +53,7 @@
 @media screen and (min-width: 650px) and (max-width: 1650px) { 
     .login-form {
         position: fixed;
-        margin-top: 30vh;
+        margin-top: 25vh;
         color: rgb(255, 76, 56);
         display: flex;
         justify-content: center;
