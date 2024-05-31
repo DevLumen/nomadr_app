@@ -314,6 +314,10 @@ body {
     color: white;
 }
 
+h1 {
+    color: #FF5A5F;
+}
+
 /* Laptop */
 @media screen and (min-width: 100px) and (max-width: 1650px) {
     .navbar {

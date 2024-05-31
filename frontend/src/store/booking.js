@@ -24,16 +24,16 @@ const initialState = {
 
 const bookingsReducer = (state = initialState, action) => {
     let newState;
-    // console.log("hello?????")
+    
     switch (action.type) {
         case LOAD_BOOKINGS: {
-            // console.log("hello?????!!!!!!!!!!!!!!!")
+            
             newState = {...state}
             action.bookings.forEach(booking => {
                 newState[booking.id] = booking;
                 console.log(booking);
             });
-            // console.log("hello??????@@@@@@@@@@@@@@@@@@@")
+            
             return newState;
         }
         default:

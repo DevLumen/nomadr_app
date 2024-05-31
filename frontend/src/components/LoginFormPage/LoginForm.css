@@ -43,7 +43,23 @@
     padding-left: 10px;
 }
 
-.login-msg {
+/* .login-msg {
     font-size: 34pt;
     padding-top: 40px;
+} */
+
+
+/* Laptop */
+@media screen and (min-width: 650px) and (max-width: 1650px) { 
+    .login-form {
+        position: fixed;
+        margin-top: 30vh;
+        color: rgb(255, 76, 56);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: black solid 2px;
+        padding: 50px;
+    }
 }

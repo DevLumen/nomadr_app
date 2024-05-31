@@ -53,3 +53,22 @@ label {
 .signup-msg {
     padding-top: 40px;
 }
+
+
+/* Laptop */
+@media screen and (min-width: 650px) and (max-width: 1650px) { 
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        color: rgb(255, 76, 56);
+        border: black solid 2px;
+        padding: 20px;
+    }
+
+    .signup-msg {
+        white-space: nowrap;
+    }
+}

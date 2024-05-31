@@ -17,6 +17,7 @@ import BookingsPage from "./components/BookingsPage";
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
+  
   useEffect(() => {
     dispatch(sessionActions.restoreUser()).then(() => setIsLoaded(true));
   }, [dispatch]);
@@ -50,9 +51,6 @@ function App() {
           </Route>
           <Route exact path='/bookings'>
             <BookingsPage />
-          </Route>
-          <Route path='/'>
-            <h1>Page Not Found.</h1>
           </Route>
         </Switch>
       )}

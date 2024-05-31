@@ -36,9 +36,12 @@ function Navigation({ isLoaded }){
   return (
     <nav className='navbar'>
         <div className='logo'>
+          {sessionUser && 
             <Link to={`/`}>
                 <i className="fas fa-caravan">--<i className="fas fa-shuttle-van"></i></i>
             </Link>
+          }
+          {!sessionUser && <h1>Nomadr.</h1> }
         </div>
         <div className='group1'>
           {sessionUser &&
