@@ -2,4 +2,3 @@ node_modules
 .env
 build
 .DS_Store
-backend/node_modules/es5-ext/test/

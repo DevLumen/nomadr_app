@@ -41,7 +41,7 @@ function Navigation({ isLoaded }){
                 <i className="fas fa-caravan">--<i className="fas fa-shuttle-van"></i></i>
             </Link>
           }
-          {!sessionUser && <h1>Nomadr.</h1> }
+          {!sessionUser && <Link to={'/'}><h1>Nomadr.</h1></Link> }
         </div>
         <div className='group1'>
           {sessionUser &&
